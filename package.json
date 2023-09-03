@@ -1,0 +1,12 @@
+{
+  "private": true,
+  "scripts": {
+    "dev": "esbuild --serve --servedir=.",
+    "build": "esbuild ./index.ts --outdir=. --minify"
+  },
+  "devDependencies": {
+    "esbuild": "^0.19.2",
+    "prettier": "^3.0.3",
+    "typescript": "^5.2.2"
+  }
+}
