@@ -1,12 +1,16 @@
 {
+  "name": "space-invaders",
   "private": true,
+  "repository": "pi0/space-invaders",
   "scripts": {
-    "dev": "esbuild --serve --servedir=.",
-    "build": "esbuild ./index.ts --outdir=. --minify"
+    "build": "esbuild ./index.ts --outdir=. --minify",
+    "dev": "esbuild --serve --servedir=."
   },
   "devDependencies": {
     "esbuild": "^0.19.2",
     "prettier": "^3.0.3",
+    "terser": "^5.19.3",
     "typescript": "^5.2.2"
-  }
+  },
+  "packageManager": "pnpm@8.7.1"
 }

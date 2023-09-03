@@ -37,6 +37,6 @@ canvas {
 <div id="game"></div>
 
 <script type="module">
-import { startGame } from './index.js'
+const { startGame } = await import('./index.js')
 startGame({ selector: '#game' })
 </script>

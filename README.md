@@ -6,13 +6,13 @@
 
 ## Using in your pages
 
-Checkout [./index.html](./index.html) for additional styles.
+Checkout [`index.html`](./index.html) for additional styles.
 
 ```html
 <div id="game"></div>
 <script type="module">
-import { startGame } from './index.js'
-startGame({ selector: '#game' })
+const { startGame } = await import("https://cdn.jsdelivr.net/gh/pi0/space-invaders/index.js");
+startGame({ selector: "#game" });
 </script>
 ```
 
