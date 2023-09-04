@@ -3,8 +3,9 @@
   "private": true,
   "repository": "pi0/space-invaders",
   "scripts": {
+    "push": "pnpm build && git commit -am $1",
     "build": "esbuild ./index.ts --outdir=. --minify",
-    "dev": "esbuild --serve --servedir=."
+    "dev": "esbuild ./index.ts --outfile=index.js --serve --servedir=."
   },
   "devDependencies": {
     "esbuild": "^0.19.2",

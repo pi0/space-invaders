@@ -6,6 +6,8 @@ export interface InvadersOptions {
   canvas?: HTMLCanvasElement;
   width?: number;
   height?: number;
+  autoPlay?: boolean;
+  title?: string;
 }
 
 export function startGame(options: InvadersOptions = {}) {
@@ -815,7 +817,7 @@ export function startGame(options: InvadersOptions = {}) {
 
   function drawStartScreen() {
     fillCenteredText(
-      "Space Invaders",
+      options.title || "Space Invaders",
       CANVAS_WIDTH / 2,
       CANVAS_HEIGHT / 2.75,
       "#FFFFFF",
@@ -937,6 +939,11 @@ export function startGame(options: InvadersOptions = {}) {
 
   init();
   animate();
+
+  if (options.autoPlay) {
+    initGame();
+    hasGameStarted = true;
+  }
 
   // ###################################################################
   // Sounds
