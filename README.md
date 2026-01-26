@@ -4,6 +4,24 @@
 
 [Play Online](https://pi0.github.io/space-invaders/)
 
+## Two-Player Mode (vs AI)
+
+Battle against an AI opponent! Both players compete to destroy aliens and earn points.
+
+![Gameplay Screenshot](./screenshot.png)
+
+**Features:**
+- 🎮 Human player (green) at the bottom, AI player (red) at the top
+- 👾 Aliens spawn in the middle - both players shoot to destroy them
+- 💥 Players can hit each other directly
+- 🏆 3 waves of aliens - highest score wins!
+- 📱 Touch controls supported for mobile
+
+**Controls:**
+- ← → Arrow keys to move
+- SPACE to shoot
+- ENTER to start
+
 ## Using in your pages
 
 Checkout [`index.html`](./index.html) for additional styles.
